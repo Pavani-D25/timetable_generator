@@ -1,0 +1,87 @@
+/* ActionAreaCard.css */
+.card-container {
+    position: relative; /* Allow positioning within the container */
+    top: 56px; /* Adjust based on your layout */
+    width: calc(100% - 250px); /* Adjust width considering the sidebar */
+    height: calc(100% - 56px); /* Adjust height considering the navbar */
+    padding: 20px; /* Add padding around the card */
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 100px;    
+
+}
+
+.card {
+    width: 300px; /* Fixed width for the card */
+    height: 300px; /* Fixed height for the card */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    position: relative; /* Positioning context for the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    border-radius: 8px; /* Optional: rounded corners */
+    transition: box-shadow 0.3s ease; /* Optional: smooth shadow transition on hover */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.card-img {
+    object-fit: cover; /* Ensure the image covers the card area */
+    width: 100%; /* Full width of the card */
+    height: 180px; /* Fixed height for the image */
+}
+
+.card-content {
+    flex: 1; /* Allow content to take remaining space */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 16px; /* Padding inside the content area */
+}
+
+.area{
+    padding-bottom: 4px;
+}
+
+.action_btn{
+    display: flex;
+    background-color: darkcyan;
+    justify-content: center; /* Center the button text */
+    width: 50%; /* Full width of the card */
+    position: absolute; /* Absolute positioning within the card */
+    bottom: 10px;
+    left: 75px;
+    border: none;
+     /* Distance from the bottom of the card */
+}
+
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .card-container {
+        width: 100%; /* Full width for mobile */
+        height: 300px; /* Auto height for better stacking */
+        padding: none; /* Adjust padding for smaller screens */
+        gap: 20px;
+        top: 0; /* Reduced gap for mobile */
+    }
+
+    .card {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 300px; /* Max width to maintain card size */
+        height: 300px; /* Auto height to fit content */
+    }
+
+    .button {
+        width: 50%; /* Full width of the card */
+        left: 0; /* Align to the left edge of the card */
+        bottom: 10px; /* Distance from the bottom of the card */
+        border-top: none; 
+        left: 80px;
+        /* Remove border */
+    }
+}

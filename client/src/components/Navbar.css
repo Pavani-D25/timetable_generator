@@ -1,0 +1,24 @@
+
+
+.bg-white {
+    background-color: white !important;
+  }
+  
+  .navbar-brand div {
+    line-height: 1.2;
+  }
+
+
+.search_btn {
+  background-color: #90ee90; 
+  border-color: #90ee90;
+  color: black;
+}
+
+.search_btn:hover,
+.search_btn:focus {
+  background-color: #76c7c0;
+  border-color: #76c7c0;
+  color: white; 
+}
+

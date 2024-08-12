@@ -1,0 +1,59 @@
+/* TimetableDisplay.css */
+
+/* Container for the timetable */
+.timetable-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 230px; /* Adjust to fit the sidebar width */
+    margin-right: 15px; /* Ensure padding is visible on the right */
+    position: relative;
+}
+
+/* Title of the timetable */
+.timetable-container h2 {
+    margin-bottom: 20px;
+    color: #343a40; /* Dark gray color for title */
+    font-size: 1.5rem;
+}
+
+/* Table styles */
+.timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable-table th, .timetable-table td {
+    border: 1px solid #dee2e6; /* Light gray border for table cells */
+    padding: 12px;
+    text-align: center;
+}
+
+.timetable-table th {
+    background-color: #343a40; /* Dark gray background for headers */
+    color: white;
+}
+
+.timetable-table tr:nth-child(even) {
+    background-color: #e9ecef; /* Light gray background for even rows */
+}
+
+.timetable-table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .timetable-container {
+        margin-left: 0; /* Remove left margin for small screens */
+        margin-right: 0; /* Remove right margin for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .timetable-table th, .timetable-table td {
+        font-size: 12px; /* Smaller text on mobile */
+        padding: 8px;
+    }
+}

@@ -1,0 +1,32 @@
+
+/* Adjust container to account for the fixed navbar and sidebar */
+.form-container {
+    margin-top: 56px; /* Adjust based on the height of the navbar */
+    margin-left: 250px; /* Adjust based on the width of the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust width considering the sidebar */
+}
+
+h2{
+    padding-bottom:20px ;
+}
+
+.btn1{
+    display: flex;
+    background-color: darkcyan;
+    justify-content: center; 
+    cursor: pointer;
+    border: none;
+}
+
+.btn1:hover{
+    background-color: rgb(2, 161, 161);
+
+}
+
+@media (max-width: 991px) {
+    .form-container {
+        margin-left: 0; /* Remove margin for small screens */
+        width: 100%; /* Full width for small screens */
+    }
+}

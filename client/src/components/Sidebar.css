@@ -1,0 +1,52 @@
+/* Sidebar.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Sidebar for large screens */
+.sidebar-large {
+    position: fixed;
+    top: 56px; /* Adjust this to align directly below the navbar */
+    left: 0;
+    width: 230px;
+    height: calc(100% - 56px); /* Adjust height to fit below the navbar */
+    background-color: #212529; /* Dark background */
+    color: white;
+    padding: 15px;
+}
+/* Example CSS for a class */
+.custom-font-class {
+    font-family: "Playfair Display", serif;
+}
+
+/* Sidebar for small screens */
+.sidebar {
+    
+    position: fixed;
+    top: 56px; /* Align with the top of the sidebar for small screens */
+    left: 0;
+    width: 250px;
+    height: calc(100% - 56px); /* Adjust height to fit below the navbar */
+    background: #212529; /* Dark background */
+    color: #fff;
+    padding: 15px;
+    z-index: 1050; /* Ensure it’s above other content */
+    display: none; /* Hidden by default */
+}
+
+/* Ensure correct display on small and large screens */
+@media (max-width: 991px) {
+    .sidebar-large {
+        display: none; /* Hide sidebar on small screens */
+    }
+    .sidebar {
+        display: block; /* Show sidebar on small screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        display: none; /* Hide sidebar on large screens */
+    }
+    .sidebar-large {
+        display: block; /* Show sidebar on large screens */
+    }
+}
